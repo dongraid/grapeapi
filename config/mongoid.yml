@@ -168,7 +168,7 @@ production:
     default:
       database: grapeapi_test
       hosts:
-        - localhost:27017
+        - mongodb://heroku_9dvzmng9:uj43eerbmkfun9g52q4k2qc0on@ds021434.mlab.com:21434/heroku_9dvzmng9
       options:
         read:
           mode: :primary
