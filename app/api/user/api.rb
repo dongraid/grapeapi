@@ -6,10 +6,6 @@ module User
     default_format :json
     formatter :json, Grape::Formatter::ActiveModelSerializers
 
-    helpers do
-      # HELPERS
-    end
-
     resource :users do
       desc 'List of users'
       get '', root: :users do
@@ -36,6 +32,5 @@ module User
         Employee.create!(params)
       end
     end
-
   end
 end
